@@ -31,7 +31,7 @@ cd diffusion-posterior-sampling
 
 
 ### 2) Download pretrained checkpoint
-From the [link](), download the checkpoint "ffhq_10m.pt" and paste it to ./models/
+From the [link](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkelbSX3xGZh?usp=sharing), download the checkpoint "ffhq_10m.pt" and paste it to ./models/
 ```
 mkdir models
 mv {DOWNLOAD_DIR}/ffqh_10m.pt ./models/
