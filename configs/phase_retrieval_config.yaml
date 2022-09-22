@@ -1,0 +1,17 @@
+conditioning:
+  method: ps
+  params:
+    scale: 1.0
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: phase_retrieval
+    oversample: 2.0
+
+  noise: 
+    name: poisson
+    rate: 1.0

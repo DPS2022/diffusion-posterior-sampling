@@ -1,0 +1,18 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: motion_blur
+    kernel_size: 61
+    intensity: 0.5
+
+  noise: 
+    name: poisson
+    rate: 1.0

@@ -1,0 +1,19 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: super_resolution
+    in_shape: !!python/tuple [1, 3, 256, 256]
+    scale_factor: 4
+  
+  noise: 
+    name: poisson 
+    rate: 1.0
+    # sigma: 0.05
