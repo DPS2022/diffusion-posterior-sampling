@@ -36,7 +36,7 @@ From the [link](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkel
 mkdir models
 mv {DOWNLOAD_DIR}/ffqh_10m.pt ./models/
 ```
-
+{DOWNLOAD_DIR} is the directory that you downloaded checkpoint to.
 
 
 ### 3) Set environment
