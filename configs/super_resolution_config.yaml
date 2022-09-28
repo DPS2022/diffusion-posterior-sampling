@@ -14,6 +14,5 @@ measurement:
     scale_factor: 4
   
   noise: 
-    name: poisson 
-    rate: 1.0
-    # sigma: 0.05
+    name: gaussian
+    sigma: 0.05
