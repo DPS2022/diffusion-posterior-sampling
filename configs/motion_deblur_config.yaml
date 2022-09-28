@@ -14,5 +14,5 @@ measurement:
     intensity: 0.5
 
   noise: 
-    name: poisson
-    rate: 1.0
+    name: gaussian
+    sigma: 0.05
