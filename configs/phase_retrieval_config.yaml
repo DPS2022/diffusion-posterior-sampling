@@ -13,5 +13,5 @@ measurement:
     oversample: 2.0
 
   noise: 
-    name: poisson
-    rate: 1.0
+    name: gaussian
+    sigma: 0.05
