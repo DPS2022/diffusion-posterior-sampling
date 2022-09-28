@@ -19,6 +19,10 @@ In this work, we extend diffusion solvers to efficiently handle general noisy (n
 
 - nvidia-docker (if you use GPU in docker container)
 
+It is okay to use lower version of CUDA with proper pytorch version.
+
+Ex) CUDA 10.2 with pytorch 1.7.0
+
 ## Getting started 
 
 ### 1) Clone the repository
