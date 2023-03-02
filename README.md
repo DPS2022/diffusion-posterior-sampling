@@ -5,7 +5,7 @@
 <!-- See more results in the [project-page](https://jeongsol-kim.github.io/dps-project-page) -->
 
 ## Abstract
-In this work, we extend diffusion solvers to efficiently handle general noisy (non)linear inverse problems via the Laplace approximation of the posterior sampling. Interestingly, the resulting posterior sampling scheme is a blended version of the diffusion sampling with the manifold constrained gradient without strict measurement consistency projection step, yielding more desirable generative path in noisy settings compared to the previous studies.
+In this work, we extend diffusion solvers to efficiently handle general noisy (non)linear inverse problems via the approximation of the posterior sampling. Interestingly, the resulting posterior sampling scheme is a blended version of the diffusion sampling with the manifold constrained gradient without strict measurement consistency projection step, yielding more desirable generative path in noisy settings compared to the previous studies.
 
 ![cover-img](./figures/cover.jpg)
 
@@ -23,6 +23,8 @@ It is okay to use lower version of CUDA with proper pytorch version.
 
 Ex) CUDA 10.2 with pytorch 1.7.0
 
+<br />
+
 ## Getting started 
 
 ### 1) Clone the repository
@@ -33,6 +35,7 @@ git clone https://github.com/DPS2022/diffusion-posterior-sampling
 cd diffusion-posterior-sampling
 ```
 
+<br />
 
 ### 2) Download pretrained checkpoint
 From the [link](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkelbSX3xGZh?usp=sharing), download the checkpoint "ffhq_10m.pt" and paste it to ./models/
@@ -41,6 +44,10 @@ mkdir models
 mv {DOWNLOAD_DIR}/ffqh_10m.pt ./models/
 ```
 {DOWNLOAD_DIR} is the directory that you downloaded checkpoint to.
+
+:speaker: Checkpoint for imagenet is uploaded.
+
+<br />
 
 
 ### 3) Set environment
@@ -66,6 +73,8 @@ pip install -r requirements.txt
 pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
 ```
 
+<br />
+
 ### [Option 2] Build Docker image
 
 Install docker engine, GPU driver and proper cuda before running the following commands.
@@ -80,6 +89,7 @@ docker build -t dps-docker:latest .
 docker run -it --rm --gpus=all dps-docker
 ```
 
+<br />
 
 ### 4) Inference
 
@@ -89,6 +99,11 @@ python3 sample_condition.py \
 --diffusion_config=configs/diffusion_config.yaml \
 --task_config={TASK-CONFIG};
 ```
+
+
+:speaker: For imagenet, use configs/imagenet_model_config.yaml
+
+<br />
 
 ## Possible task configurations
 
